@@ -1,7 +1,19 @@
 # burger-app
 ### Collaborators
-Luna
+Luna Shuqair, https://github.com/LShuqair
 ##
+This app uses the following: Handlebars, ORM, Express, Node JS, and MySQL. This app allows the user to log in the name of the burger of their choice by typing in the text field. They could type in anything but the purpose is add in a item and the item will be moved to the other side of the page to another container. 
+##
+
+User hits submit after typing in the text field which then will be displayed on the left-side container. When you click on the button, this will delete the item or move the item to the right-side container. The items will be stored in the database. 
+
+This application will also be deployed to Heroku.
+
+[screenshot](public\assets\img\screenshot_burgerapp.png)
+
+##
+Links to repository 
+https://github.com/ikra-rafi/burger-app
 
 
 
