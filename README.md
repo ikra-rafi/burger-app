@@ -9,7 +9,7 @@ User hits submit after typing in the text field which then will be displayed on 
 
 This application will also be deployed to Heroku.
 
-![screenshot](public\assets\img\screenshot_burgerapp.png)
+![screenshot](public/assets/img/screenshot_burgerapp.png)
 
 ##
 Links to repository 
