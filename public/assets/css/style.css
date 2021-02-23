@@ -1,0 +1,54 @@
+.jumbotron-fluid {
+    background-image: url("https://cdn.dribbble.com/users/1900024/screenshots/4243108/video_2018-02-19_20-16-17.gif");
+    /* https://i.pinimg.com/originals/3d/10/e0/3d10e04d6e3121ddeda29273b36f95bc.gif */
+    /* https://cdn.dribbble.com/users/1900024/screenshots/4243108/video_2018-02-19_20-16-17.gif */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.jumbotron-fluid > h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #2C5F2D !important;
+}
+
+.btn {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#newburger {
+    border-radius: 5px;
+}
+
+/* #color-override {
+    color: #fff;
+} */
+
+#leftside {
+    background-color: #5cb85c;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#devourbutton, #deletebutton {
+    float: right;
+}
+
+#rightside {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    #body {
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+
+}
