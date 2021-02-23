@@ -1,49 +1,49 @@
-.jumbotron-fluid {
-    background-image: url("https://cdn.dribbble.com/users/1900024/screenshots/4243108/video_2018-02-19_20-16-17.gif");
-    /* https://i.pinimg.com/originals/3d/10/e0/3d10e04d6e3121ddeda29273b36f95bc.gif */
-    /* https://cdn.dribbble.com/users/1900024/screenshots/4243108/video_2018-02-19_20-16-17.gif */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 10px;
+#body {
+    font-family: 'Luckiest Guy', cursive !important;
+    background-color: rgb(24, 24, 20);
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
 }
 
-.jumbotron-fluid > h1 {
-    font-family: 'Luckiest Guy', cursive;
-    color: #2C5F2D !important;
+#input {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.btn {
+.btn-danger {
+    padding: 15px;
+    margin: auto;
+     margin-left: 40%;
+}
+
+
+.input-group {
+    padding-bottom: 20px;
+}
+
+#h1 {
+    text-align: center;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    padding-bottom:20px;
+    padding-top:20px;
 }
 
-#newburger {
-    border-radius: 5px;
-}
-
-/* #color-override {
-    color: #fff;
-} */
-
-#leftside {
-    background-color: #5cb85c;
-    color: white;
+h5 {
     text-align: center;
-    font-size: 1.2em;
 }
 
-#devourbutton, #deletebutton {
-    float: right;
-}
-
-#rightside {
-    background-color: black;
-    color: white;
+p {
     text-align: center;
-    font-size: 1.2em;
 }
 
+#cards{
+    background-color: #fcd84a ;
+}
+#list {
+    background-color: rgb(228, 228, 228);
+}
 @media only screen and (max-width: 1024px) {
     
     #body {

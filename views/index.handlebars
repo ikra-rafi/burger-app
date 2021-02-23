@@ -1,59 +1,52 @@
-{{!-- Setup the index.handlebars to have the template that Handlebars can render onto. --}}
-
-<div class="container">
-
-    <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-4">Eat Da Burger</h1>
-        <p class="lead">The Only Way the <br> World Eats Burgers</p>
-        <br>
-        <panel>
-            <form class="create-form">
-                <div class="form-group">
-                    <input type="text" id="newburger" name="burger">
-                    {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
-                    {{!-- <button type="submit" class="btn btn-success btn-sm" id="addburger"><span class="fa fa-thumbs-up"></span></button> --}}
-                <button type="submit" class="btn btn-secondary btn-sm" id="addburger">Add Burger</button>
-
-                </div>
-            </form>
-        </panel>
-    </div><!-- /jumbotron -->
-
-    <div class="row">
-        <!-- Undevoured Burgers -->
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading" id="leftside"><strong>Ordered</strong></div>
-                <div class="panel-body">
-                    <ul>
-                        {{#each burgers}}
+ <header><h1 id="h1">Eat-Da-Burger!</h1></header>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="cards" >
+                        <div class="card-header">
+                          <h5> Burgers Available!</h5>
+                        </div>
+                        <ul class="list-group list-group-flush" id ="list">
+                          {{#each burgers}}
                             {{#unless devoured}}
-                                <span><strong>  {{this.burger_name}} </strong></span>
-                                <button type="button" class="eatburger btn btn-warning" id ="devourbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
-                                <hr>
+                              <li class="list-group-item" id ="list">{{> burgers/burger-block devoured=true}}</li>
                             {{/unless}}
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Devoured Burgers -->
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading" id="rightside"><strong>Devoured Burgers</strong></div>
-                <div class="panel-body">
-                    <ul>
+                          {{/each}}
+                        </ul>
+                      </div>
+                </div> 
+                <div id="input" class="col-md-4">
+                    <div class="card" id="cards">
+                        <img src="https://media.giphy.com/media/3oEdv5S8Th6b9gsNqM/giphy.gif" class="text-center" id="gif">
+                            <div class="card-body">
+                                <form class="create-form">
+                                    <p>Type your Burger and click submit</p>
+                                        <div class="input-group">
+                                            <div class="col">
+                                                <input type="text" id="Bg" class="form-control" placeholder="Enter Burger">
+                                            </div>
+                                        </div>
+                                        <div>
+                                           <button type="submit" class="btn btn-danger" >Submit</button>
+                                        </div>
+                                </form>
+                            </div>
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                <div class="card" id="cards" >
+                    <div class="card-header">
+                      <h5>Devoured Burgers!</h5>
+                    </div>
+                        <i class="fas fa-trash-alt"></i>
+                    <ul class="list-group list-group-flush">
+                  
                         {{#each burgers}}
                             {{#if devoured}}
-                                <span><strong> {{this.burger_name}} </strong></span>
-                                <button type="button" class="trashburger btn btn-danger" id ="deletebutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
-                                <hr>
+                                <li class="list-group-item" id ="list">{{> burgers/burger-block devoured=false}}</li>
                             {{/if}}
                         {{/each}}
                     </ul>
+                  </div>
                 </div>
             </div>
         </div>
-    </div><!-- /row -->
-
-</div><!-- /container -->
