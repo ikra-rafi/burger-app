@@ -13,7 +13,7 @@ This application will also be deployed to Heroku.
 ### app with burgers entered on both columns
 ![screenshot](public/assets/img/screenshot_burgerapp.png)
 
-
+ 
 ##
 Links to repository  
 https://github.com/ikra-rafi/burger-app
