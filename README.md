@@ -41,7 +41,7 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 * **This assignment must be deployed.** Be sure to utilize the [MYSQL Heroku Deployment Guide](../../04-Important/MySQLHerokuDeploymentProcess.pdf) in order to deploy your assignment.
 
-### Before You Begin
+### Before You Begin 
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
