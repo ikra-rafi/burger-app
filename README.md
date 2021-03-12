@@ -8,8 +8,11 @@ This app uses the following: Handlebars, ORM, Express, Node JS, and MySQL. This 
 User hits submit after typing in the text field which then will be displayed on the left-side container. When you click on the button, this will delete the item or move the item to the right-side container. The items will be stored in the database. 
 
 This application will also be deployed to Heroku.
-
+### open app
+![screenshot](public/assets/img/burgerapp.png)
+### app with burgers entered on both columns
 ![screenshot](public/assets/img/screenshot_burgerapp.png)
+
 
 ##
 Links to repository 
