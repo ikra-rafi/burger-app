@@ -15,7 +15,7 @@ This application will also be deployed to Heroku.
 
 
 ##
-Links to repository 
+Links to repository  
 https://github.com/ikra-rafi/burger-app
 ##
 Heroku
